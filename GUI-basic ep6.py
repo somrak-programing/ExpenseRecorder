@@ -30,8 +30,11 @@ helpmenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Help',menu=helpmenu)
 helpmenu.add_command(label='About',command=About)
 #Donate
+def Donate():
+	messagebox.showinfo('Donate','BTC Address: 47843525345345')
 donatemenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Donate',menu=donatemenu)
+donatemenu.add_command(label='Donate',command=Donate)
 
 
 
